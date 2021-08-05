@@ -1,0 +1,14 @@
+ git clone --branch develop https://github.com/Macri-desarrollo/contabilid  ad.git
+git branch ; Ver las ramas creadas
+git checkout nombreRama ; Pasar de una rama a otra
+git flow init
+git flow feature start CRUD_Ventas ;Comenzar una nueva característica.
+git flow feature finish MYFEATURE ;Finalizar una característica.
+git flow feature pull origin MYFEATURE ; Obteniendo características publicadas.
+git flow release start RELEASE [BASE] ; Creará una rama de publicación derivada de la rama 'develop'.
+git flow release publish RELEASE ; publicar remotamente la rama de publicación después de crearla para permitir que otros desarrolladores envíen cambios para esta versión.
+git flow release finish RELEASE ;cierre a una publicación.
+git flow hotfix start VERSION [BASENAME] ;Crear una revision.
+git flow hotfix finish VERSION ; Cierra una revisión
+
+https://danielkummer.github.io/git-flow-cheatsheet/index.es_ES.html
